@@ -1,0 +1,39 @@
+{
+  "name": "dsh-api-testgen",
+  "version": "0.1.0",
+  "description": "接口测试生成：解析 OpenAPI 3.x，为每个接口生成覆盖成功/缺参/非法枚举的测试用例，输出 Python(pytest) 或 TypeScript(vitest) 测试骨架",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "openapi",
+    "testing",
+    "test-generation",
+    "接口",
+    "测试"
+  ],
+  "author": "istone <ad571@qq.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-tools": ">=0.1.0-rc.6"
+  }
+}
